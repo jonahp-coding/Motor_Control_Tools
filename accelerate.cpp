@@ -18,7 +18,7 @@ void accelerate_motor(uint8_t target_speed_param, uint16_t rate_param, uint8_t i
   
     motor_set_pwm(speed);
   
-    Serial.print("speed: ");
+    Serial.print("speed(pwm): ");
     Serial.println(speed);
     Serial.print("acceleration_timestamp(ms): ");
     Serial.println(acceleration_timestamp);
