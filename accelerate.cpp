@@ -1,9 +1,9 @@
-uint8_t R_target_speed = motor_speed; // 'motor_speed'
-uint16_t R_rate = 5000; // how long motor 'R' should take to reach 'R_target_speed'
+uint8_t R_target_speed = 150; // { adjust this value as you please... }
+uint16_t R_rate = 5000; // how long motor 'R' should take to reach 'R_target_speed' { adjust this value as you please... }
 uint8_t R_speed; // instantaneous speed of motor 'R'
 uint16_t R_acceleration_timestamp; // instantaneous timestamp of motor 'R' acceleration
 uint16_t R_initial_timestamp; // timestamp at beginning of motor 'R' acceleration
-uint8_t R_initial_speed = 50; // the intial speed of motor 'L' at beginning of acceleration
+uint8_t R_initial_speed = 50; // the intial speed of motor 'L' at beginning of acceleration { adjust this value as you please... }
 
 void acceleration_test(uint16_t rate) {
   motor_1_set_pwm(R_initial_speed);
